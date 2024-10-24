@@ -1,17 +1,21 @@
 
-
-
     #### write  your code here - make sure to return the result of your roll ###
     #### your function, called roll_die, should meet these requirements.  
     #### Include this documentation inside of your function!
-    """Rolls a die with the specified number of sides and returns the result.
 
+import random
+
+sides = 4
+
+def roll_die(sides):
+    '''Rolls a die with the specified number of sides and returns the result.
     Args:
-        sides (int): The number of sides on the die (must be at least 4).
-
-    Returns:
-        int: The result of the roll.
-    """
+        sides(int): The number of sides on the die must be at least 4)
+    Returns: 
+        int: The result of the roll.'''
+    if sides < 4:
+        raise ValuError('The number of sides on the die must be at least 4.')
+    return random.randint(1,sides)
 
 
 
