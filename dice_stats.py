@@ -8,7 +8,7 @@ def main():
     """Calculates and displays statistics from multiple dice rolls."""
 
     num_rolls = int(input('Enter the number of dice rolls: '))
-    num_sides = int(input('Enter the number of sides on the die, between 4 and 6: '))
+    num_sides = int(input('Enter the number of sides on the die: '))
 
     roll_counts = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0}  # Initialize roll count dictionary
 
